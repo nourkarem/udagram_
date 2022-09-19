@@ -23,12 +23,7 @@ jobs:
             sudo apt update
             sudo apt install python3-pip python-dev
             sudo pip install awsebcli
-      - run:
-          name: Install dependencies
-          command: |
-            sudo apt update
-            sudo apt install python3-pip python-dev
-            sudo pip install awsebcli
+
       - run:
           name: Install Front-End Dependencies
           command: |
@@ -48,6 +43,7 @@ jobs:
           name: Front-End Lint
           command: |
             echo "TODO: Lint the frontend"
+            npm run frontend:lint
             
             
       # TODO: Build the frontend app
