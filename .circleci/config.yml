@@ -16,6 +16,19 @@ jobs:
           node-version: '14.15'         
       - checkout
       # Use root level package.json to install dependencies in the frontend app
+      - aws-cli/setup
+      - run:
+          name: Install dependencies
+          command: |
+            sudo apt update
+            sudo apt install python3-pip python-dev
+            sudo pip install awsebcli
+      - run:
+          name: Install dependencies
+          command: |
+            sudo apt update
+            sudo apt install python3-pip python-dev
+            sudo pip install awsebcli
       - run:
           name: Install Front-End Dependencies
           command: |
