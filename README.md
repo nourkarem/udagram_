@@ -27,9 +27,9 @@ This application is provided to you as an alternative starter project if you do 
 
 - AWS CLI v2, v1 can work but was not tested for this project
 
-- A RDS database running Postgres.
+- A RDS database running Postgres.   [(database-2.c6xx9p6nao0i.us-east-1.rds.amazonaws.com)]
 
-- A S3 bucket for hosting uploaded pictures.
+- A S3 bucket for hosting:  [(http://udagram536217305501.s3-website-us-east-1.amazonaws.com/home)] - this is the endpoint to launch for the hosted working frontend application
 
 ```
 
